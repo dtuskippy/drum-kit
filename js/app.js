@@ -1,7 +1,7 @@
 
 //better than using 7, use loop through buttons, and EVEN one better, use the class of buttons (.drum), just in case new buttons are added that have nothing to with this use case -- yeah, confusion originally that drum is versus .w, .a, etc., but I guess the space over on index.html allows for multiple classes to be assigned to same 'class =')
 let numberOfDrumButtons = document.querySelectorAll(".drum").length;
-for(i = 0; i < numberOfDrumButtons; i++) {
+for(let i = 0; i < numberOfDrumButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {alert("I got clicked!");});
 }
 
